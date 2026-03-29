@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're In! | AI Search Visibility Workshop | Catapult X</title>
+  <meta name="description" content="Registration confirmed for the AI Search Visibility Workshop with Daylene Long.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cx-deep-teal: #15435a;
+      --cx-bright-blue: #2abae5;
+      --cx-bright-blue-light: #e8f6fc;
+      --cx-raspberry: #d82356;
+      --cx-raspberry-light: #fdeef2;
+      --cx-gray-bg: #f5f7f9;
+      --cx-text: #15435a;
+      --cx-text-secondary: rgba(21, 67, 90, 0.75);
+      --cx-text-muted: #797e82;
+      --cx-border: #dde3e8;
+      --cx-white: #FFFFFF;
+      --max-width: 680px;
+      --section-padding: 80px 24px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: var(--cx-text);
+      line-height: 1.7;
+      font-size: 17px;
+      background: var(--cx-white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ─── NAV BAR ─── */
+    .nav {
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--cx-border);
+      padding: 16px 24px;
+    }
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-brand {
+      text-decoration: none;
+    }
+
+    /* ─── CONFIRMATION HERO ─── */
+    .confirm-hero {
+      padding: 80px 24px 48px;
+      background: linear-gradient(180deg, var(--cx-gray-bg) 0%, var(--cx-white) 100%);
+      text-align: center;
+    }
+    .confirm-hero .checkmark {
+      width: 72px;
+      height: 72px;
+      background: #e6f9ee;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+    }
+    .confirm-hero .checkmark svg {
+      width: 36px;
+      height: 36px;
+      color: #22c55e;
+    }
+    .confirm-hero h1 {
+      font-size: clamp(32px, 5vw, 44px);
+      color: var(--cx-deep-teal);
+      margin-bottom: 16px;
+    }
+    .confirm-hero p {
+      font-size: 19px;
+      color: var(--cx-text-secondary);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ─── DETAILS CARD ─── */
+    .details-section {
+      padding: 0 24px 64px;
+    }
+    .details-card {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      background: var(--cx-white);
+      border: 1px solid var(--cx-border);
+      border-radius: 16px;
+      padding: 48px 40px;
+      box-shadow: 0 2px 12px rgba(21, 67, 90, 0.06);
+    }
+    .details-card h2 {
+      font-size: 22px;
+      color: var(--cx-deep-teal);
+      margin-bottom: 28px;
+    }
+    .detail-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--cx-border);
+    }
+    .detail-row:last-child {
+      border-bottom: none;
+    }
+    .detail-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--cx-bright-blue-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .detail-icon svg {
+      width: 20px;
+      height: 20px;
+      color: var(--cx-bright-blue);
+    }
+    .detail-text h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--cx-text);
+      margin-bottom: 4px;
+      letter-spacing: 0;
+    }
+    .detail-text p {
+      font-size: 15px;
+      color: var(--cx-text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ─── WHAT'S INCLUDED ─── */
+    .included-section {
+      padding: 48px 24px 64px;
+      background: var(--cx-gray-bg);
+    }
+    .included-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .included-inner h2 {
+      font-size: 22px;
+      color: var(--cx-deep-teal);
+      margin-bottom: 24px;
+    }
+    .included-list {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+    }
+    .included-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 16px;
+      color: var(--cx-text-secondary);
+      line-height: 1.5;
+    }
+    .included-list li svg {
+      width: 20px;
+      height: 20px;
+      color: #22c55e;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ─── FOOTER ─── */
+    .footer {
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--cx-text-muted);
+      border-top: 1px solid var(--cx-border);
+    }
+    .footer a {
+      color: var(--cx-bright-blue);
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 600px) {
+      .details-card {
+        padding: 32px 24px;
+      }
+      .detail-row {
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand"><img src="catapultx-logo.png" alt="Catapult X" style="height: 52px; width: auto;"></a>
+    </div>
+  </nav>
+
+  <!-- Confirmation Hero -->
+  <section class="confirm-hero">
+    <div class="checkmark">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+      </svg>
+    </div>
+    <h1>You're in.</h1>
+    <p>Your spot in the AI Search Visibility Workshop is confirmed. Here's everything you need to know.</p>
+  </section>
+
+  <!-- Workshop Details Card -->
+  <section class="details-section">
+    <div class="details-card">
+      <h2>Workshop Details</h2>
+
+      <div class="detail-row">
+        <div class="detail-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+          </svg>
+        </div>
+        <div class="detail-text">
+          <h3>Date</h3>
+          <p>Wednesday, April 8, 2026</p>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div class="detail-text">
+          <h3>Time</h3>
+          <p>9:00 AM – 10:00 AM PT (60 min live session + optional 30-min Q&A)</p>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+          </svg>
+        </div>
+        <div class="detail-text">
+          <h3>Location</h3>
+          <p>Live on Zoom — your link will be emailed 24 hours before the session.</p>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div class="detail-text">
+          <h3>Preparation</h3>
+          <p>Nothing required — just show up ready to learn. All materials will be provided.</p>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+        </div>
+        <div class="detail-text">
+          <h3>Questions?</h3>
+          <p>Reach out anytime at <a href="mailto:daylene@catapult-x.com" style="color: var(--cx-bright-blue); text-decoration: none;">daylene@catapult-x.com</a></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- What's Included -->
+  <section class="included-section">
+    <div class="included-inner">
+      <h2>What You'll Get</h2>
+      <ul class="included-list">
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+          </svg>
+          60-minute live workshop with actionable frameworks
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+          </svg>
+          30-minute open Q&A after the session
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+          </svg>
+          AI Search Visibility Audit Checklist
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+          </svg>
+          Prompt Pack for testing your brand's AI visibility
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+          </svg>
+          Content optimization templates you can use immediately
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2026 <a href="https://catapult-x.com">Catapult X</a>. All rights reserved.
+  </footer>
+
+</body>
+</html>
